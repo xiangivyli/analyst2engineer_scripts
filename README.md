@@ -4,11 +4,16 @@ In this repo, I stored scripts and resources for my YouTube channel, analyst2eng
 # Table of Content
 ## pm2.5 monitoring (airflow, duckdb, streamlit)
 ### ep1. an overview
-### ep2. codespaces, dags and requests, containers
-#### ep2.1 play around with codespaces 
-[resources](https://github.com/xiangivyli/analyst2engineer_scripts/blob/main/pm25_ep2.1_codespaces.md)
 
-### ep2.2 play around with docker and docker-compose
+[![](https://img.youtube.com/vi/feROfXJrvJk/0.jpg)](https://www.youtube.com/watch?v=feROfXJrvJk)
+### ep2. codespaces, dags and requests, containers
+#### ep2.1 Play Around with Codespaces 
+
+[resources for the ep2.1](https://github.com/xiangivyli/analyst2engineer_scripts/blob/main/pm25_ep2.1_codespaces.md)
+
+[![](https://img.youtube.com/vi/tqQYDnE6fcE/0.jpg)](https://www.youtube.com/watch?v=tqQYDnE6fcE)
+
+### ep2.2 Play Around with Docker and Docker-Compose
 
 
 ### ep3. data sources and data quality control
