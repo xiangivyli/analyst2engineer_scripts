@@ -9,11 +9,11 @@ In this repo, I stored scripts and resources for my YouTube channel, analyst2eng
 ### ep2. codespaces, dags and requests, containers
 #### ep2.1 Play Around with Codespaces 
 
-[resources for the ep2.1](https://github.com/xiangivyli/analyst2engineer_scripts/blob/main/pm25_ep2.1_codespaces.md)
+GitHub Codespaces overview https://docs.github.com/en/codespaces/overview
 
 [![](https://img.youtube.com/vi/tqQYDnE6fcE/0.jpg)](https://www.youtube.com/watch?v=tqQYDnE6fcE)
 
-### ep2.2 Play Around with Docker and Docker-Compose
+#### ep2.2 Play Around with Docker and Docker-Compose
 
 
 ### ep3. data sources and data quality control
