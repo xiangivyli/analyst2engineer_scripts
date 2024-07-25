@@ -15,7 +15,11 @@ GitHub Codespaces overview: https://docs.github.com/en/codespaces/overview
 
 #### ep2.2 Play Around with Docker and Docker-Compose
 
-Docker Manuals: https://docs.docker.com/manuals/
+- Docker Manuals: https://docs.docker.com/manuals/
+
+- Docker Learning Crash Courses: 
+  - **TechWorld with Nana**: https://www.youtube.com/watch?v=EYNwNlOrpr0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=5
+  - **DatatalksClub** DE Zoomcamp: https://www.youtube.com/watch?v=pg19Z8LL06w
 
 ### ep3. data sources and data quality control
 ### ep4. variables and Python functions
