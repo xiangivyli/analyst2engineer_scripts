@@ -65,7 +65,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Define the command that runs when container starts
-ENTRTPOINT ["python", "app.py"]
+ENTRYPOINT ["python", "app.py"]
 ```
 
 ### Build the image
