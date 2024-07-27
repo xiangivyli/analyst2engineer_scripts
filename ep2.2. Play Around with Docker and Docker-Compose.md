@@ -50,7 +50,7 @@ docker rmi $(docker images -q)
 
 ## Type 2 Customise an image from Dockfile
 
-### Dockfile Demo
+### Dockerfile Demo
 ```dockerfile
 # Use an official Python runtime as a base image
 FROM python:3.8
@@ -71,4 +71,22 @@ ENTRYPOINT ["python", "app.py"]
 ### Build the image
 ```bash
 docker build -t my_python_app .
+```
+
+### app.py demo
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    'number': [1, 2, 3, 4],
+    'career': ["biology", "pathology", "business_analytics", "data_engineer"]
+})
+
+print("ivy's career:")
+print(df)
+```
+
+### requirements.demo
+```txt
+pandas==1.5.3
 ```
