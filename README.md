@@ -20,6 +20,8 @@ GitHub Codespaces overview: https://docs.github.com/en/codespaces/overview
 - Docker Learning Crash Courses: 
   - **TechWorld with Nana**: https://www.youtube.com/watch?v=EYNwNlOrpr0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=5
   - **DatatalksClub** DE Zoomcamp: https://www.youtube.com/watch?v=pg19Z8LL06w
+ 
+[![](https://img.youtube.com/vi/Vg7RmpLOq14/0.jpg)](https://www.youtube.com/watch?v=Vg7RmpLOq14)
 
 ### ep3. data sources and data quality control
 ### ep4. variables and Python functions
