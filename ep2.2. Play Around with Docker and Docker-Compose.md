@@ -6,7 +6,7 @@
 docker pull <image_name>
 ```
 ```bash
-docker run -it <image_name>:tag /bin/bash
+docker run -it --name <container_name> <image_name>:tag /bin/bash
 ```
 
 ## Images and containers management
@@ -65,12 +65,12 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Define the command that runs when container starts
-ENTRYPOINT ["python", "app.py"]
+CMD ["bash"]
 ```
 
 ### Build the image
 ```bash
-docker build -t my_python_app .
+docker build -t my_python_app:1.0 .
 ```
 
 ### app.py demo
