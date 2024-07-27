@@ -86,7 +86,7 @@ print("ivy's career:")
 print(df)
 ```
 
-### requirements.demo
+### requirements.txt demo
 ```txt
 pandas==1.5.3
 ```
