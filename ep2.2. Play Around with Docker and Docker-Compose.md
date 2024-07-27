@@ -2,6 +2,11 @@
 
 ## Images and containers management
 
+### Pull an image and run a container
+```bash
+docker run -it --container_name python:3.8
+```
+
 ### List all images
 ```bash
 docker images
@@ -10,12 +15,34 @@ docker images
 ```bash
 docker ps -a
 ```
-### Stop all running containers and remove
+### Restart the container
 ```bash
-docker stop $(docker ps -q) && docker rm $(docker ps -aq)
+docker restart <container_id_or_name>
 ```
-
-### Delete containers
+### Attach to the container in the interactive mode
+```bash
+docker exec -it <container_id_or_name> /bin/bash
+```
+### Stop all running containers 
+```bash
+docker stop $(docker ps -q) 
+```
+### Remove containers
+```bash
+docker rm <container_id>
+```
+### Remove all containers
+```bash
+docker rm $(docker ps -aq)
+```
+### Remove images
+```bash
+docker rmi <image_id>
+```
+### Remove all images
+```bash
+docker rmi $(docker images -q)
+```
 
 ## Type 1 Pull official images from Docker Hub
 
