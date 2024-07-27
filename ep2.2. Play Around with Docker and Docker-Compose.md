@@ -50,7 +50,7 @@ docker rmi $(docker images -q)
 docker pull <image_name>
 ```
 ```bash
-docker run <image_name>
+docker run -it <image_name>:tag /bin/bash
 ```
 ### Dockfile Demo
 ```dockerfile
