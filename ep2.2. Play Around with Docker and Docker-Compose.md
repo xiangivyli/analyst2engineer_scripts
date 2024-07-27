@@ -50,6 +50,11 @@ docker rmi $(docker images -q)
 
 ## Type 2 Customise an image from Dockfile
 
+### requirements.txt demo
+```txt
+pandas==1.5.3
+```
+
 ### Dockerfile Demo
 ```dockerfile
 # Use an official Python runtime as a base image
@@ -86,7 +91,4 @@ print("ivy's career:")
 print(df)
 ```
 
-### requirements.txt demo
-```txt
-pandas==1.5.3
-```
+
