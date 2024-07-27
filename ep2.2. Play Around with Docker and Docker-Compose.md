@@ -78,8 +78,8 @@ docker build -t my_python_app .
 import pandas as pd
 
 df = pd.DataFrame({
-    'number': [1, 2, 3, 4],
-    'career': ["biology", "pathology", "business_analytics", "data_engineer"]
+    'number': [1, 2, 3, 4, 5],
+    'career': ["biology", "pathology", "database_manager", "business_analytics", "data_engineer"]
 })
 
 print("ivy's career:")
