@@ -1,11 +1,15 @@
 # Commands
 
-## Images and containers management
+## Type 1 Pull official images from Docker Hub
 
-### Pull an image and run a container
 ```bash
-docker run -it --name container_name python:3.8
+docker pull <image_name>
 ```
+```bash
+docker run -it <image_name>:tag /bin/bash
+```
+
+## Images and containers management
 
 ### List all images
 ```bash
@@ -44,14 +48,8 @@ docker rmi <image_id>
 docker rmi $(docker images -q)
 ```
 
-## Type 1 Pull official images from Docker Hub
+## Type 2 Customise an image from Dockfile
 
-```bash
-docker pull <image_name>
-```
-```bash
-docker run -it <image_name>:tag /bin/bash
-```
 ### Dockfile Demo
 ```dockerfile
 # Use an official Python runtime as a base image
