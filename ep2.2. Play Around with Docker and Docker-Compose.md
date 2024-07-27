@@ -4,7 +4,7 @@
 
 ### Pull an image and run a container
 ```bash
-docker run -it --container_name python:3.8
+docker run -it --name container_name python:3.8
 ```
 
 ### List all images
