@@ -10,61 +10,79 @@ The number ranges from 0 – 65535 like multiple different channels and is categ
 
 ### Stream run
 How to run your app: https://docs.streamlit.io/develop/concepts/architecture/run-your-app
+How to deploy streamlit using Docker: https://docs.streamlit.io/deploy/tutorials/docker
 ```bash
 streamlit run your_script.py
 ```
 
 ### Demo
-### Option 1, pull an official image and add features in the docker-compose.yml
-#### docker-compose.yml
-```yml
-version: '1.0'
-services:
-  streamlit:
-    image: python:3.9
-    command: bash -c "pip install -r /app/include/streamlit_container_requirements.txt && streamlit run --server.enableWebsocketCompression=false --server.enableCORS=false --server.enableXsrfProtection=false /app/include/streamlit_app.py"
-    ports:
-      - "8501:8501"
-    volumes:
-      - ./include:/app/include
+#### 1. Structure of the project
 ```
+├── docker-compose.yml
+├── include
+│   ├── data.csv
+│   └── streamlit_app.py
+└── streamlit_app
+    ├── Dockerfile
+    └── requirements.txt
+```
+#### /include
+##### data.csv
+```csv
+year,career
+2011,biology
+2012,biology
+2013,biology
+2014,biology
+2015,biology
+2015,pathology
+2016,pathology
+2017,pathology
+2018,pathology
+2018,database_manager
+2019,database_manager
+2020,database_manager
+2021,business_analytics
+2022,business_analytics
+2023,business_analytics
+2024,data_engineer
+```
+##### streamlit_app.py
+```python
+import streamlit as st
+import pandas as pd
 
-### Option 2, build a customised image and simplify the docker-compose.yml
-#### Dockerfile
-```dockerfile
+# Load data from CSV file
+data_file_path = '/app/include/data.csv'
+df = pd.read_csv(data_file_path)
+
+# Streamlit App
+st.title("Streamlit Application")
+st.write("Ivy's journey:")
+st.dataframe(df, width=800, height=600)
+```
+#### /streamlit_app
+##### Dockerfile
+```Dockerfile
 # Use the official Python image
-FROM python:3.9-slim
+FROM python:3.8-slim
 
-# Set the working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the requirements file
-COPY include/streamlit_container_requirements.txt .
+# Copy requirements.txt and install dependencies
+COPY ./requirements.txt /app
+RUN pip install -r requirements.txt
 
-# Install the dependencies
-RUN pip install -r streamlit_container_requirements.txt
+# Expose the streamlit port
+EXPOSE 8501
 
-# Copy the application code
-COPY app/ .
-
-# Copy the data directory
-COPY include/data /data
-
-# Command to run the Streamlit app
-CMD ["streamlit", "run", "--server.enableWebsocketCompression=false", "--server.enableCORS=false", "--server.enableXsrfProtection=false", "streamlit_app.py"]
+# Run the streamlit app
+ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501"]
 ```
-#### docker-compose.yml
-```bash
-version: '1.0'
-
-services:
-  streamlit:
-    build: .
-    ports:
-      - "8501:8501"
-    volumes:
-      - ./app:/app
-      - ./include/data:/data
-    environment:
-      - STREAMLIT_ENV=development
+##### requirements.txt
+```txt
+streamlit==1.20.0
+pandas==2.0.0
 ```
+
