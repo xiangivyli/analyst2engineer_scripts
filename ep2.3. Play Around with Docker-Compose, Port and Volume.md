@@ -82,7 +82,7 @@ ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501"]
 ```
 ##### requirements.txt
 ```txt
-streamlit==1.20.0
+streamlit==1.33.0
 pandas==2.0.0
 ```
 
