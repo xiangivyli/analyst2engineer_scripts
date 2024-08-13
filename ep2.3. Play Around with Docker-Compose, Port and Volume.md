@@ -86,3 +86,22 @@ streamlit==1.33.0
 pandas==2.0.0
 ```
 
+#### Volume Option 1
+##### `docker run`
+`docker run -d -p 8501:8501 -v /workspaces/demo/include:/app/include streamlit_app:1.0`
+
+#### Volume Option 2
+###### docker-compose.yml
+```yml
+name: demo
+
+services:
+  streamlit_app:
+    build:
+      context: ./streamlit_app
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./include:/app/include
+```
