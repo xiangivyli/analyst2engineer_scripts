@@ -78,7 +78,7 @@ RUN pip install -r requirements.txt
 EXPOSE 8501
 
 # Run the streamlit app
-ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501"]
+ENTRYPOINT ["streamlit", "run", "/app/include/streamlit_app.py", "--server.port=8501"]
 ```
 ##### requirements.txt
 ```txt
