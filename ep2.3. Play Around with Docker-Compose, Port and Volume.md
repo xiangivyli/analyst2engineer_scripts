@@ -105,3 +105,17 @@ services:
     volumes:
       - ./include:/app/include
 ```
+
+#### Command docker-compose commands
+##### Start Services
+`docker-compose up -d`
+
+#### Stop Services
+`docker-compose stop`
+
+#### Restart Services
+`docker-compose start`
+
+#### Remove Services
+`docker-compose down`
+
