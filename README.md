@@ -31,7 +31,7 @@ In this repo, I stored scripts and resources for my YouTube channel, analyst2eng
 
 - The volume documentation: https://docs.docker.com/engine/storage/volumes/
 
-- Commands I used in the video: [link](https://github.com/xiangivyli/analyst2engineer_scripts/blob/main/ep2.3.%20Play%20Around%20with%20Docker-Compose%2C%20Port%20and%20Volume.md)
+- Demo codes and commands I used in the video: [link](https://github.com/xiangivyli/analyst2engineer_scripts/blob/main/ep2.3.%20Play%20Around%20with%20Docker-Compose%2C%20Port%20and%20Volume.md)
 
 [![](https://img.youtube.com/vi/TyDLSdCAyZY/0.jpg)](https://www.youtube.com/watch?v=TyDLSdCAyZY)
 
