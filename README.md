@@ -6,10 +6,10 @@ In this repo, I stored scripts and resources for my YouTube channel, analyst2eng
 ### ep1. an overview
 
 [![](https://img.youtube.com/vi/feROfXJrvJk/0.jpg)](https://www.youtube.com/watch?v=feROfXJrvJk)
-### ep2. codespaces, dags and requests, containers
+### ep2. Preparation: codespaces, streamlit, docker, dags and requests...
 #### ep2.1 Play Around with Codespaces 
 
-GitHub Codespaces overview: https://docs.github.com/en/codespaces/overview
+- GitHub Codespaces overview: https://docs.github.com/en/codespaces/overview
 
 [![](https://img.youtube.com/vi/tqQYDnE6fcE/0.jpg)](https://www.youtube.com/watch?v=tqQYDnE6fcE)
 
@@ -25,7 +25,14 @@ Commands I used in the video: [link](https://github.com/xiangivyli/analyst2engin
 
 [![](https://img.youtube.com/vi/Vg7RmpLOq14/0.jpg)](https://www.youtube.com/watch?v=Vg7RmpLOq14)
 
-##### ep2.3 Play Around with Docker-Compose (Port, Volume)
+#### ep2.3 Play Around with Streamlit, Volumes and Docker-Compose
+
+- The streamlit with docker documentation: https://docs.streamlit.io/deploy/tutorials/docker
+
+- The volume documentation: https://docs.docker.com/engine/storage/volumes/
+
+[![](https://img.youtube.com/vi/TyDLSdCAyZY/0.jpg)](https://www.youtube.com/watch?v=TyDLSdCAyZY)
+
 ### ep3. data sources and data quality control
 ### ep4. variables and Python functions
 ### ep4. duckdb and streamlit
