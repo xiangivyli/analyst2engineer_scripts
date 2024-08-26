@@ -8,7 +8,7 @@ Deadsnakes PPA is a popular and trusted repository maintained by the Ubuntu comm
 ```bash
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
-sudo apt install python3.10 python3.10-venv python3.10-distutils
+sudo apt install python3.10 python3.10-venv 
 ```
 
 ### Create the virtual environment and activate
