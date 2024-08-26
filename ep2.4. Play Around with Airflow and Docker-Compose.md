@@ -28,7 +28,7 @@ Link: https://www.astronomer.io/docs/astro/cli/install-cli?tab=linux#install-the
 curl -sSL install.astronomer.io | sudo bash -s -- v1.28.1
 ```
 
-## Step 4. Astro Init
+## Step 4. Astro Dev Init
 ```bash
 astro dev init
 ```
