@@ -1,13 +1,6 @@
 # Part A Install Astro and Play Around with Containers
 
-## Step 1. Install Astro CLI
-Link: https://www.astronomer.io/docs/astro/cli/install-cli?tab=linux#install-the-astro-cli
-
-```bash
-curl -sSL install.astronomer.io | sudo bash -s -- v1.28.1
-```
-
-## Step 2. Create a Virtual Environment
+## Step 1. Create a Virtual Environment
 
 ### Install Python 3.10 (Optional)
 Deadsnakes PPA is a popular and trusted repository maintained by the Ubuntu community 
@@ -24,9 +17,15 @@ python3.10 -m venv .venv
 source .venv/bin/activate
 ```
 
-## Step 3. Install apache-airflow 
+## Step 2. Install apache-airflow 
 ```bash
 pip install apache-airflow==2.10.0
+```
+## Step 3. Install Astro CLI
+Link: https://www.astronomer.io/docs/astro/cli/install-cli?tab=linux#install-the-astro-cli
+
+```bash
+curl -sSL install.astronomer.io | sudo bash -s -- v1.28.1
 ```
 
 ## Step 4. Astro Init
