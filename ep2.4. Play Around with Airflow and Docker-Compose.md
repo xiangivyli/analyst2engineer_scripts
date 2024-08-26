@@ -9,18 +9,18 @@ curl -sSL install.astronomer.io | sudo bash -s -- v1.28.1
 
 ## Step 2. Create a Virtual Environment
 
-### Install Python 3.9 (Optional)
+### Install Python 3.10 (Optional)
 Deadsnakes PPA is a popular and trusted repository maintained by the Ubuntu community 
 (Reference: https://www.geeksforgeeks.org/how-to-install-python-on-linux/)
 ```bash
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
-sudo apt install python3.9 python3.9-venv python3.9-distutils
+sudo apt install python3.10 python3.10-venv python3.10-distutils
 ```
 
 ### Create the virtual environment and activate
 ```bash
-python3.9 -m venv .venv
+python3.10 -m venv .venv
 source .venv/bin/activate
 ```
 
