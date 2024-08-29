@@ -26,29 +26,30 @@ astro dev bash <webserver_container_name>
 
 # Part B Add Streamlit Container
 
-### Rename the `requirements.txt` to `streamlit_requirements.txt` and put it in the include
+### 1. Rename the `requirements.txt` to `streamlit_requirements.txt` and put it in the include
 
 
-### Covert the Dockerfile for streamlit into service in the `docker-compose.override.yml`
+### 2. Covert the Dockerfile for streamlit into service in the `docker-compose.override.yml`
 ```yml
 services:
   streamlit_app:
     image: python:3.8-slim
     command: >
-      bash -c "pip install -r /app/include/streamlit_requirements.txt && \
-      streamlit run /app/include/streamlit_app.py
+      bash -c "pip install -r /include/streamlit_requirements.txt && \
+      streamlit run /include/streamlit_app.py
       "
     ports:
       - "8501:8501"
     volumes:
-      - ./include:/app/include
+      - ./include:/include
 ```
+### 3. Adjust the data path
+`data_file_path = "/include/data.csv"` in the `streamlit_app.py`
 
 ### Astro rebuilds the containers
-
-
-
-# Part C Divide the data flow into tasks
+```bash
+astro dev restart
+```
 
 
 
