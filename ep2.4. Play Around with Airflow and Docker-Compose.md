@@ -26,14 +26,17 @@ astro dev bash <webserver_container_name>
 
 # Part B Add Streamlit Container
 
-### docker-compose.override.yml
+### Rename the `requirements.txt` to `streamlit_requirements.txt` and put it in the include
+
+
+### Covert the Dockerfile for streamlit into service in the `docker-compose.override.yml`
 ```yml
 services:
   streamlit_app:
     image: python:3.8-slim
     command: >
       bash -c "pip install -r /app/include/streamlit_requirements.txt && \
-      stream run /app/include/streamlit_app.py
+      streamlit run /app/include/streamlit_app.py
       "
     ports:
       - "8501:8501"
