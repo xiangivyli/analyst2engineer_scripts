@@ -24,6 +24,10 @@ Or
 astro dev bash <webserver_container_name>
 ```
 
+```bash
+docker logs <container_name>
+```
+
 # Part B Add Streamlit Container
 
 ### 1. Rename the `requirements.txt` to `streamlit_requirements.txt` and put it in the include
