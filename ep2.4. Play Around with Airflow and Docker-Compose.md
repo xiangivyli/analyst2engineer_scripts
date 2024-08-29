@@ -35,9 +35,11 @@ services:
   streamlit_app:
     image: python:3.8-slim
     command: >
-      bash -c "pip install -r /include/streamlit_requirements.txt && \
-      streamlit run /include/streamlit_app.py
-      "
+      bash -c "python3 -m venv .venv && \
+      source .venv/bin/activate && \
+      pip install --upgrade pip && \
+      pip install -r /include/streamlit_requirements.txt && \
+      streamlit run /include/streamlit_app.py"
     ports:
       - "8501:8501"
     volumes:
